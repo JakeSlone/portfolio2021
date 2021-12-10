@@ -12,7 +12,6 @@ const Footer = ({ dark }) => {
         behavior: "smooth",
       })
     }, 100)
-    console.log("ran")
   }
   return (
     <Wrapper>

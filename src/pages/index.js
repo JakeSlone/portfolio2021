@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     transition-duration: 0.5s;
     transition-timing-function: ease;
+    -webkit-tap-highlight-color: transparent;
   }
   body {
     margin: 0;
