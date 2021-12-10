@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react"
 import { Wrapper } from "./Nav.styles"
 import Progress from "./Progress"
 
-const Nav = () => {
+const Nav = ({ dark }) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0)
   const [visible, setVisible] = useState(true)
 
@@ -47,7 +47,7 @@ const Nav = () => {
   }
 
   return (
-    <Wrapper visible={visible}>
+    <Wrapper visible={visible} dark={dark}>
       <div
         className="container"
         data-sal="fade"
@@ -80,7 +80,7 @@ const Nav = () => {
             Projects
           </a>
         </div>
-        <Progress />
+        <Progress dark={dark} />
       </div>
     </Wrapper>
   )

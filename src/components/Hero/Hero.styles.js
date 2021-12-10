@@ -101,7 +101,8 @@ export const Wrapper = styled.div`
         margin: 0;
         li {
           position: relative;
-          border-bottom: solid 1px #fff;
+          border-bottom: solid 1px
+            ${props => (props.dark ? "white" : "#17181c")};
           overflow: hidden;
           transition-duration: 0.3s;
 
@@ -142,12 +143,13 @@ export const Wrapper = styled.div`
           }
 
           :hover {
-            background-color: white;
+            background-color: ${props => (props.dark ? "white" : "#17181c")};
             transition-duration: 0.3s;
-            border-bottom: solid 1px black;
+            border-bottom: solid 1px
+              ${props => (props.dark ? "black" : "white")};
 
             p {
-              color: black;
+              color: ${props => (props.dark ? "black" : "white")};
               margin-left: 8px;
             }
           }

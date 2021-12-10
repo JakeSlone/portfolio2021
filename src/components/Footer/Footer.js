@@ -1,8 +1,9 @@
 import React from "react"
 import { Wrapper } from "./Footer.styles"
 import arrow from "../../images/arrow.png"
+import arrowb from "../../images/arrowb.png"
 
-const Footer = () => {
+const Footer = ({ dark }) => {
   function scrollToTop() {
     setTimeout(function () {
       window.scrollTo({
@@ -24,7 +25,7 @@ const Footer = () => {
           role="button"
           tabIndex={0}
         >
-          Back to top <img src={arrow} alt="arrow icon"></img>
+          Back to top <img src={dark ? arrow : arrowb} alt="arrow icon"></img>
         </div>
       </div>
     </Wrapper>

@@ -7,28 +7,3 @@
   font-family: "AK2";
   src: url("./Aeonik-Medium.woff") format("woff");
 }
-* {
-  box-sizing: border-box;
-  color: white;
-  font-family: "AK1", sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-html,
-body {
-  margin: 0;
-  background-color: #17181c;
-}
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: white;
-  border-radius: 5px;
-}

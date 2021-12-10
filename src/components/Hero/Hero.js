@@ -1,9 +1,10 @@
 import React, { useState } from "react"
 import { Wrapper } from "./Hero.styles"
 import calgs from "../../images/calgs.png"
+import calgsb from "../../images/calgsb.png"
 import link from "../../images/link.svg"
 
-const Hero = () => {
+const Hero = ({ dark }) => {
   const [isCopied, setIsCopied] = useState(false)
 
   function copyEmail() {
@@ -15,7 +16,7 @@ const Hero = () => {
   }
 
   return (
-    <Wrapper>
+    <Wrapper dark={dark}>
       <div
         className="container"
         data-sal="fade"
@@ -33,7 +34,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="img-container">
-          <img src={calgs} alt="Calgary Downtown Drawing" />
+          <img src={dark ? calgs : calgsb} alt="Calgary Downtown Drawing" />
         </div>
         <p>
           I like to create websites and applications. I'm 23 and I have been

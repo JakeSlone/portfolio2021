@@ -14,14 +14,14 @@ const Wrapper = styled.div`
     z-index: 9999999;
     top: 0;
     left: 0;
-    background: #fff;
+    background: ${props => (props.dark ? "white" : "#17181c")};
     transform-origin: left;
     height: 2px;
     width: ${props => props.scrollY}%;
   }
 `
 
-function Progress() {
+function Progress({ dark }) {
   const [scrollY, setScrollY] = useState(0)
 
   function logit() {
@@ -44,7 +44,7 @@ function Progress() {
   })
 
   return (
-    <Wrapper scrollY={scrollY}>
+    <Wrapper scrollY={scrollY} dark={dark}>
       <div className="progress-bar"></div>
     </Wrapper>
   )

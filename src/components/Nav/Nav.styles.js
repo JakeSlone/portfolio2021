@@ -44,7 +44,7 @@ export const Wrapper = styled.div`
       display: block;
       height: 2px;
       left: 50%;
-      background: #fff;
+      background: ${props => (props.dark ? "white" : "#17181c")};
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
     }

@@ -1,8 +1,9 @@
 import React from "react"
 import { Wrapper } from "./Projects.styles"
 import caret from "../../images/right-arrow.png"
+import caretb from "../../images/right-arrowb.png"
 
-const Projects = () => {
+const Projects = ({ dark }) => {
   return (
     <Wrapper>
       <div className="container">
@@ -28,7 +29,7 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Github <img src={caret} alt="caret icon"></img>
+              Github <img src={dark ? caret : caretb} alt="caret icon"></img>
             </a>
           </div>
           <div
@@ -49,14 +50,14 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Website <img src={caret} alt="caret icon"></img>
+              Website <img src={dark ? caret : caretb} alt="caret icon"></img>
             </a>
             <a
               href="https://github.com/JakeSlone/TitanCampaign"
               target="_blank"
               rel="noreferrer"
             >
-              Github <img src={caret} alt="caret icon"></img>
+              Github <img src={dark ? caret : caretb} alt="caret icon"></img>
             </a>
           </div>
           <div
@@ -77,7 +78,7 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Github <img src={caret} alt="caret icon"></img>
+              Github <img src={dark ? caret : caretb} alt="caret icon"></img>
             </a>
           </div>
           <div
@@ -98,14 +99,14 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Website <img src={caret} alt="caret icon"></img>
+              Website <img src={dark ? caret : caretb} alt="caret icon"></img>
             </a>
             <a
               href="https://github.com/JakeSlone/TypeChessTwitch"
               target="_blank"
               rel="noreferrer"
             >
-              Github <img src={caret} alt="caret icon"></img>
+              Github <img src={dark ? caret : caretb} alt="caret icon"></img>
             </a>
           </div>
           <div
@@ -124,7 +125,7 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Github <img src={caret} alt="caret icon"></img>
+              Github <img src={dark ? caret : caretb} alt="caret icon"></img>
             </a>
           </div>
           <div
