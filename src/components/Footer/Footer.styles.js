@@ -2,6 +2,10 @@ import styled from "styled-components"
 import { tablet, desktop } from "../Mixins"
 
 export const Wrapper = styled.div`
+  ${desktop} {
+    padding: 0 40px;
+  }
+
   .container {
     height: 64px;
     display: flex;
